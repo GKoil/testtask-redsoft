@@ -1,0 +1,17 @@
+---
+
+env:
+  es6: true
+  node: true
+  browser: true
+
+extends:
+  - 'airbnb-base'
+
+parserOptions:
+  ecmaVersion: 2020
+  sourceType: module
+
+rules:
+  import/extensions: 0
+  import/no-extraneous-dependencies: [off, { devDependencies: false }]
