@@ -25,7 +25,31 @@
       </form>
     </nav>
   </header>
-  <main></main>
+  <main class="page-main">
+    <h1 class="visually-hidden">Интернет-магазин картин</h1>
+    <div class="page-main__catalog catalog">
+      <h2 class="visually-hidden">Каталог</h2>
+      <div class="catalog__section catalog-section">
+        <h3 class="catalog-section__title">Картины эпохи Возрождения</h3>
+        <ul class="catalog-section__list">
+          <li class="catalog-section__list-item">
+            <article class="catalog-section__list-card picture-card">
+              <img class="picture-card__img" width="280" height="160" src="./img/birth-of-Venus@1x.jpg" srcset="./img/birth-of-Venus@2x.jpg 2x" alt="Картина Рождение Венеры">
+              <h4 class="picture-card__title">«Рождение Венеры» Сандро Боттичелли</h4>
+              <div class="picture-card__buy-block">
+                <div class="picture-card__price-block">
+                  <span class="picture-card__old-price">2 000 000 $</span>
+                  <span class="picture-card__actual-price">1 000 000 $</span>
+                </div>
+                <button class="picture-card__buy-button" data-name-picture="birth-of-venus">Купить</button>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </main>
   <footer></footer>
 </body>
 </html>

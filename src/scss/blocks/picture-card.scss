@@ -1,0 +1,46 @@
+.picture-card{
+  &__img{}
+  &__title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: $main-black;
+    max-width: 220px;
+    margin-left: 24px;
+  }
+  &__buy-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 232px;
+    margin: 0 auto;
+  }
+  &__price-block{
+    max-width: 93px;
+  }
+  &__old-price{
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    text-decoration-line: line-through;
+    color: $card-gray;
+  }
+  &__actual-price{
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: $card-black;
+  }
+  &__buy-button{
+    @include main-button;
+    max-width: 118px;
+    flex-grow: 1;
+    &--in-cart {
+      background-color: $main-in-cart;
+      // TODO: Доделать состояние
+    }
+  }
+}

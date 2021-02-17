@@ -1,0 +1,20 @@
+.catalog-section{
+  &__title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    color: $main-black;
+    margin-bottom: 39px;
+  }
+  &__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__list-item{
+    width: 280px;
+    height: 328px;
+    border: 1px solid $main-gray-light;
+  }
+  &__list-card{}
+}
