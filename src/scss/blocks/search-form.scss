@@ -1,0 +1,19 @@
+.search-form {
+  display: flex;
+  min-height: 48px;
+  width: 416px;
+  &__input {
+    padding: 0;
+    border: 1px solid $main-gray-light;
+    border-right: none;
+    width: 294px;
+    &:hover, &:focus, &:active {
+      border: 1px solid $main-gray-black;
+      border-right: none;
+    }
+  }
+  &__button {
+    @include main-button;
+    flex-grow: 1;
+  }
+}

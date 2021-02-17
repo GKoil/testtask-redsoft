@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,25 @@
   <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-  
+  <header class="main-header">
+    <nav class="main-header__navigation navigation">
+      <div class="navigation__pages navigation-pages">
+        <img class="navigation-pages__logo" width="48" height="48" src="img/logo.svg" alt="Логотип компании">
+        <ul class="navigation-pages__list main-navigation-list">
+          <li class="main-navigation-list__item"><a class="main-navigation-list__item-link" href="#">Каталог</a></li>
+          <li class="main-navigation-list__item"><a class="main-navigation-list__item-link" href="#">Доставка</a></li>
+          <li class="main-navigation-list__item"><a class="main-navigation-list__item-link" href="#">Оплата</a></li>
+          <li class="main-navigation-list__item"><a class="main-navigation-list__item-link" href="#">Контакты</a></li>
+          <li class="main-navigation-list__item"><a class="main-navigation-list__item-link" href="#">О галерее</a></li>
+        </ul>
+      </div>
+      <form class="navigation__search-form search-form" method="get" action="">
+        <input class="search-form__input" placeholder="Поиск по названию картины" type="text">
+        <button class="search-form__button" type="button">Найти</button>
+      </form>
+    </nav>
+  </header>
+  <main></main>
+  <footer></footer>
 </body>
 </html>

@@ -1,0 +1,9 @@
+.main-header {
+  border-bottom: 1px solid $main-gray-light;
+  &__navigation {
+    padding: 24px 0;
+    min-width: 1200px;
+    max-width: 1216px;
+    margin: 0 auto;
+  }
+}
