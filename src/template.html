@@ -10,7 +10,7 @@
   <header class="main-header">
     <nav class="main-header__navigation navigation">
       <div class="navigation__pages navigation-pages">
-        <img class="navigation-pages__logo" width="48" height="48" src="img/logo.svg" alt="Логотип компании">
+        <a class="navigation-pages__logo-link" href="#"><img class="navigation-pages__logo" width="48" height="48" src="img/logo.svg" alt="Логотип компании"></a>
         <ul class="navigation-pages__list main-navigation-list">
           <li class="main-navigation-list__item"><a class="main-navigation-list__item-link" href="#">Каталог</a></li>
           <li class="main-navigation-list__item"><a class="main-navigation-list__item-link" href="#">Доставка</a></li>
@@ -87,9 +87,9 @@
     </div>
   </main>
   <footer class="page-footer">
-    <nav class="main-header__navigation navigation">
-      <div class="navigation__pages navigation-pages">
-        <img class="navigation-pages__logo" width="48" height="48" src="img/logo.svg" alt="Логотип компании">
+    <div class="page-footer__navigation-footer navigation-footer">
+      <div class="navigation-footer__navigation-pages navigation-pages">
+        <a class="navigation-pages__logo-link" href="#"><img class="navigation-pages__logo" width="48" height="48" src="img/logo.svg" alt="Логотип компании"></a>
         <ul class="navigation-pages__list main-navigation-list">
           <li class="main-navigation-list__item"><a class="main-navigation-list__item-link" href="#">Каталог</a></li>
           <li class="main-navigation-list__item"><a class="main-navigation-list__item-link" href="#">Доставка</a></li>
@@ -98,7 +98,11 @@
           <li class="main-navigation-list__item"><a class="main-navigation-list__item-link" href="#">О галерее</a></li>
         </ul>
       </div>
-    </nav>
+      <ul class="navigation-footer__list-contact list-contact">
+        <li class="list-contact__item"><a class="list-contact__link-phone" href="tel: +74955555555">+7 (495) 555-55-55</a></li>
+        <li class="list-contact__item list-contact__item-adress">г. Москва, ул. Расплетина, 24</li>
+      </ul>
+    </div>
   </footer>
 </body>
 </html>

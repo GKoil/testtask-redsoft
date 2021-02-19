@@ -7,6 +7,7 @@
     border: 1px solid $main-gray-light;
     border-right: none;
     width: 294px;
+    background-color: inherit;
     &::placeholder {
       padding-left: 15px;
       font-family: "Merriweather";

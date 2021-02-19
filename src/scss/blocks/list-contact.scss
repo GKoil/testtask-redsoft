@@ -1,0 +1,25 @@
+.list-contact {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  &__item {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: $main-gray-list-footer;
+    display: flex;
+    align-items: center;
+  }
+  &__item-adress {
+
+  }
+  &__link-phone {
+    color: inherit;
+    font: inherit;
+  }
+}

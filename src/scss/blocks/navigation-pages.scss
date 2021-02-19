@@ -5,6 +5,11 @@
   max-width: 615px;
   &__logo {
     max-width: 48px;
+  }
+  &__logo-link {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
     margin-right: 48px;
   }
 }

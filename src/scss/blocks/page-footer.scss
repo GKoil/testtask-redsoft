@@ -1,0 +1,9 @@
+.page-footer {
+  background-color: $main-gray-footer;
+  &__navigation-footer {
+    margin: 0 auto;
+    min-width: 1200px;
+    max-width: 1216px;
+    padding: 20px 0;
+  }
+}
