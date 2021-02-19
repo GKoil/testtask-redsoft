@@ -18,6 +18,18 @@
     width: 280px;
     min-height: 328px;
     border: 1px solid $main-gray-light;
+    &--sold-out {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        bottom: -1px;
+        left: -1px;
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+    }
   }
   &__list-card{}
 }

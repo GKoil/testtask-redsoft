@@ -19,6 +19,10 @@
     justify-content: space-between;
     max-width: 232px;
     margin: 0 auto;
+    &--sold-out {
+      min-height: 48px;
+      align-items: center;
+    }
   }
   &__price-block{
     display: flex;
@@ -63,5 +67,15 @@
       background-color: $main-in-cart;
       // TODO: Доделать состояние: добавить svg
     }
+    &--disabled {
+      background-color: $card-gray-disabled;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+  }
+  &__sold-out-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: $card-black-sold-out-text;
   }
 }
