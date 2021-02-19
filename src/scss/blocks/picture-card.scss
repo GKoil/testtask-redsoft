@@ -1,5 +1,7 @@
 .picture-card{
-  &__img{}
+  &__img{
+    border-bottom: 1px solid $main-gray-light;
+  }
   &__title{
     font-style: normal;
     font-weight: normal;
@@ -8,6 +10,8 @@
     color: $main-black;
     max-width: 220px;
     margin-left: 24px;
+    margin-top: 14px;
+    margin-bottom: 21px;
   }
   &__buy-block{
     display: flex;
@@ -17,7 +21,10 @@
     margin: 0 auto;
   }
   &__price-block{
-    max-width: 93px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 96px;
   }
   &__old-price{
     display: block;
@@ -38,6 +45,7 @@
     @include main-button;
     max-width: 118px;
     flex-grow: 1;
+    padding: 14px 0;
     &--in-cart {
       background-color: $main-in-cart;
       // TODO: Доделать состояние

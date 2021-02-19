@@ -1,10 +1,10 @@
 @mixin main-button {
   background: $main-brown-button;
+  font-family: "Merriweather";
   color: #fff;
   font-size: 14px;
   font-weight: 700;
-  line-height: 21px;
-  border:  1px solid;
+  line-height: 150%;
   border: none;
   &:hover {
     background-color: $main-brown-button-hover;

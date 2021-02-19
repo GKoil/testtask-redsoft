@@ -4,16 +4,19 @@
     font-size: 24px;
     line-height: 150%;
     color: $main-black;
-    margin-bottom: 39px;
+    margin-bottom: 38px;
   }
   &__list{
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   &__list-item{
     width: 280px;
-    height: 328px;
+    min-height: 328px;
     border: 1px solid $main-gray-light;
   }
   &__list-card{}
