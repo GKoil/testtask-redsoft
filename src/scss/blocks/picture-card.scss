@@ -46,9 +46,22 @@
     max-width: 118px;
     flex-grow: 1;
     padding: 14px 0;
+    &--request {
+      box-shadow: 0 -150px 70px -120px rgb(80, 80, 80) inset,
+                  0 -220px 70px -120px rgb(202, 214, 185) inset;
+      animation: background 2s infinite alternate;
+
+      @keyframes background {
+        50% {
+          background: rgb(65, 17, 85);
+          box-shadow: 0 -140px 70px -120px rgb(153, 128, 160) inset,
+                      0 -210px 70px -120px rgb(79, 85, 85) inset
+        }
+      }
+    }
     &--in-cart {
       background-color: $main-in-cart;
-      // TODO: Доделать состояние
+      // TODO: Доделать состояние: добавить svg
     }
   }
 }

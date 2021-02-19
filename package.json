@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "lodash": "^4.17.20"
+    "lodash": "^4.17.20",
+    "on-change": "^2.2.3"
   }
 }
