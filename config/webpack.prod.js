@@ -20,4 +20,7 @@ module.exports = merge(common, {
   plugins: [
     new MiniCssExtractPlugin(),
   ],
+  performance: {
+    hints: false,
+  },
 });
