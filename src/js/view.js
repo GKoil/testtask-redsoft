@@ -1,28 +1,25 @@
-import onChange from 'on-change';
+const initial = (state) => {
+  const keys = Object.keys(state);
+  keys.forEach((key) => {
+    const { inCart, process } = state[key];
+    const button = document.querySelector(`[data-name-picture=${key}]`);
+    if (inCart) {
+      button.textContent = 'В корзине';
+      button.classList.add('picture-card__buy-button--in-cart');
+    }
+    if (!inCart) {
+      button.textContent = 'Купить';
+      button.classList.remove('picture-card__buy-button--in-cart');
+    }
+    if (process === 'request') {
+      button.disabled = true;
+      button.classList.add('picture-card__buy-button--request');
+    }
+    if (process === 'done') {
+      button.disabled = false;
+      button.classList.remove('picture-card__buy-button--request');
+    }
+  });
+};
 
-const render = (state) => onChange(state, (path, value) => {
-  const [, nameOfPicture, changeData] = path.split('.');
-  const changeButton = document.querySelector(`[data-name-picture="${nameOfPicture}"]`);
-
-  switch (changeData) {
-    case 'process':
-      changeButton.disabled = true;
-      changeButton.classList.add('picture-card__buy-button--request');
-      break;
-    case 'inCart':
-      if (value === true) {
-        changeButton.disabled = false;
-        changeButton.textContent = 'В корзине';
-        changeButton.classList.remove('picture-card__buy-button--request');
-        changeButton.classList.add('picture-card__buy-button--in-cart');
-      }
-      if (value === false) {
-        // Удаление из корзины
-      }
-      break;
-    default:
-      throw new Error(`${changeData} changeData doesn't support`);
-  }
-});
-
-export default render;
+export default initial;

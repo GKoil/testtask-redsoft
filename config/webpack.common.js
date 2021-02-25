@@ -6,7 +6,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
-  entry: path.join(__dirname, '..', 'src', 'index.js'),
+  entry: ['whatwg-fetch', path.join(__dirname, '..', 'src', 'index.js')],
   module: {
     rules: [
       // Babel use for js files
