@@ -1,10 +1,11 @@
 import _ from 'lodash';
+import Cookies from 'js-cookie';
 
 const getState = () => {
-  const localState = localStorage.getItem('state');
+  const localState = Cookies.get('state');
 
   let state;
-  if (localState === null) {
+  if (!localState) {
     state = {
       buttonsCart: {},
     };
