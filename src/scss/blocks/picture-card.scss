@@ -48,7 +48,7 @@
   &__buy-button{
     @include main-button;
     max-width: 118px;
-    flex-grow: 1;
+    width: 100%;
     padding: 14px 0;
     &--request {
       box-shadow: 0 -150px 70px -120px rgb(80, 80, 80) inset,

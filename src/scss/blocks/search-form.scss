@@ -1,7 +1,10 @@
 .search-form {
   display: flex;
-  min-height: 48px;
   width: 416px;
+  min-height: 48px;
+  // Fix for IE11
+  height: auto !important;
+  height: 48px;
   &__input {
     padding: 0;
     border: 1px solid $main-gray-light;
@@ -13,6 +16,10 @@
     font-size: 14px;
     line-height: 150%;
     font-family: "Merriweather";
+    min-height: 48px;
+    // Fix for IE11
+    height: auto !important;
+    height: 48px;
     &::placeholder {
       font-style: normal;
       font-weight: normal;
